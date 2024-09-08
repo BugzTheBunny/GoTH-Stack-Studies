@@ -1,0 +1,35 @@
+package user
+
+import (
+    "github.com/BugzTheBuinny/got/view/layout"
+    "github.com/BugzTheBuinny/got/view/components"
+    "github.com/BugzTheBuinny/got/model"
+    "context"
+	"fmt"
+)
+
+func getAuthUser(c context.Context) string {
+    fmt.Println(c)
+    user,ok := c.Value("user").(string)
+    fmt.Println(ok,user)
+    if !ok {
+        return "test"
+    }
+    return user
+}
+
+templ Show(user model.User) {
+        <h1>
+            {getAuthUser(ctx)}
+        </h1>
+    @layout.Base() {
+
+        <h1>Hello {user.Email} from the user page</h1>
+        @components.Input(
+            components.InputProps{
+                Typ: "email",
+                Name: "email",
+            },
+        )
+    }
+}
