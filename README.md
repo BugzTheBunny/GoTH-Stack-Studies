@@ -38,3 +38,5 @@
     #### This application is an example of a setup for a GO application, this uses `express` & `HTMX`.
     this app contains CRUD methods using express.js & a search functionality.
     ![alt text](/htmx-for-beginners/screenshot.png)
+
+- ## [HTMX Primer](./CRUD_application/) - [source](https://www.udemy.com/course/htmx-go-build-fullstack-applications-with-golang-and-htmx/)
