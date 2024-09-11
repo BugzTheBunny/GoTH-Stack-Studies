@@ -9,3 +9,9 @@ This part is sort of an introduction to some concepts.
 - Check for DB:
     `SELECT * FROM user;`
 - If nothing showing up - `use mysql;` and repeat the one above.
+
+# Base Project Creation: - [Base Project](./go-htmx-app/)
+
+- init project : `go mod init github.com/BugzTheBunny/go-htmx-app`
+- installing gorilla mux : `go get -u github.com/gorilla/mux`
+- Installing MySQL driver : `go get -u github.com/go-sql-driver/mysql`
